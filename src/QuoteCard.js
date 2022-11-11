@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import "./QuoteCard.css";
 
 export default function QuoteCard() {
   const [quote, setQuote] = useState([]);
@@ -42,7 +43,7 @@ export default function QuoteCard() {
   }
 
   return (
-    <div>
+    <div className="card">
       <div className="quote-wrapper">
         <div className="quote">{quote.quote}</div>
         <div className="author">Character: {quote.author}</div>

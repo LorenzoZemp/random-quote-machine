@@ -1,10 +1,11 @@
 import React from "react";
 import QuoteCard from "./QuoteCard";
+import "./App.css";
 
 export default function App() {
   return (
-    <>
-      <QuoteCard />
-    </>
+    <main>
+      <QuoteCard className="quote-card" />
+    </main>
   );
 }
