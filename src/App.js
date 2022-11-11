@@ -1,5 +1,10 @@
-function App() {
-  return null;
-}
+import React from "react";
+import QuoteCard from "./QuoteCard";
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <QuoteCard />
+    </>
+  );
+}
