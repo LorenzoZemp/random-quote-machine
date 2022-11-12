@@ -1,3 +1,7 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+/* GLOBAL STYLES */
 *,
 *::after,
 *::before {
@@ -6,14 +10,88 @@
   margin: 0;
 }
 
-.quote-card {
-  margin: 20px;
+* {
+  font-family: "Crimson Text", serif;
 }
 
+/* ELEMENT STYLES */
 main {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+}
+
+a {
+  color: black;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* CLASS STYLES */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: -1px 11px 39px -24px rgba(0, 0, 0, 0.75);
+  width: min(650px, 80%, 90%);
+  padding: 15px;
+  margin: 20px;
+}
+
+.quote-wrapper {
+  width: 100%;
+}
+
+.quote {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 1.75rem;
+}
+
+.quotation-mark {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.author,
+.anime {
+  text-align: right;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.button-wrapper {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.btns {
+  font-size: 1.35rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 425px) {
+  .quote {
+    font-size: 1.2rem;
+  }
 }
